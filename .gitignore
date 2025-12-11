@@ -1,0 +1,9 @@
+# Ignore local env files containing secrets
+.env
+.env.local
+frontend/.env
+frontend/.env.local
+backend/.env
+backend/.env.local
+
+# You can add other local-only rules here
