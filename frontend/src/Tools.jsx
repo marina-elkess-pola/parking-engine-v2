@@ -12,8 +12,11 @@ const SAMPLE_TOOLS = [
         tags: ['Featured', 'Revit Plugin'],
         link: 'https://genfabtools.com/download/RSI_Setup.exe',
         docs: 'https://genfabtools.com/docs/rsi/index.html',
-        icon: '/images/rsi/efficiency-dashboard.png',
-        price: 49,
+        icon: '/images/rsi/RSI32.png',
+
+        // ✅ PRICING (FIXED)
+        priceMonthly: 49,
+        priceYearly: 390,
     },
 ];
 
@@ -90,8 +93,8 @@ function Tools() {
                                         key={type}
                                         onClick={() => setPriceFilter(type)}
                                         className={`px-3 py-1 rounded-md text-sm ${priceFilter === type
-                                                ? 'bg-black text-white'
-                                                : 'bg-white border'
+                                            ? 'bg-black text-white'
+                                            : 'bg-white border'
                                             }`}
                                     >
                                         {type}
