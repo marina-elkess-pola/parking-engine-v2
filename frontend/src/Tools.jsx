@@ -95,14 +95,43 @@ function Tools() {
                             <input
                                 value={query}
                                 onChange={(e) => setQuery(e.target.value)}
-                                className="mt-3 w-full border px-3 py-2"
+                                className="mt-3 w-full border px-3 py-2 rounded-md"
                                 placeholder="Search tools"
                             />
 
-                            <div className="mt-4 flex gap-2">
-                                <button onClick={() => setPriceFilter('all')}>All</button>
-                                <button onClick={() => setPriceFilter('free')}>Free</button>
-                                <button onClick={() => setPriceFilter('paid')}>Paid</button>
+                            {/* FIXED FILTER BUTTONS */}
+                            <div className="mt-4 flex flex-wrap gap-2">
+
+                                <button
+                                    onClick={() => setPriceFilter('all')}
+                                    className={`px-3 py-1 rounded-md text-sm ${priceFilter === 'all'
+                                            ? 'bg-black text-white'
+                                            : 'bg-white text-black border border-gray-300'
+                                        }`}
+                                >
+                                    All
+                                </button>
+
+                                <button
+                                    onClick={() => setPriceFilter('free')}
+                                    className={`px-3 py-1 rounded-md text-sm ${priceFilter === 'free'
+                                            ? 'bg-black text-white'
+                                            : 'bg-white text-black border border-gray-300'
+                                        }`}
+                                >
+                                    Free
+                                </button>
+
+                                <button
+                                    onClick={() => setPriceFilter('paid')}
+                                    className={`px-3 py-1 rounded-md text-sm ${priceFilter === 'paid'
+                                            ? 'bg-black text-white'
+                                            : 'bg-white text-black border border-gray-300'
+                                        }`}
+                                >
+                                    Paid
+                                </button>
+
                             </div>
                         </div>
                     </aside>
@@ -112,38 +141,40 @@ function Tools() {
 
                         {/* FEATURED */}
                         <div className="mb-8 bg-white p-6 rounded-xl shadow border">
-                            <h2 className="text-2xl font-bold">Residential Scheme Intelligence</h2>
+                            <h2 className="text-2xl font-bold">
+                                Residential Scheme Intelligence
+                            </h2>
 
                             <p className="mt-3 text-slate-600">
                                 Analyze residential layouts directly inside Revit.
                             </p>
 
-                            <div className="mt-5 flex gap-3">
+                            {/* FIXED BUTTONS */}
+                            <div className="mt-5 flex flex-wrap gap-3">
 
-                                {/* OPEN TOOL */}
-                                <a
-                                    href="https://genfabtools.com/download/RSI_Setup.exe"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="bg-black text-white px-4 py-2 rounded"
+                                {/* Open Tool → GO TO PAGE */}
+                                <button
+                                    onClick={() => window.location.href = "/tools/rsi"}
+                                    className="bg-black text-white px-5 py-2 rounded-md font-semibold hover:bg-gray-800"
                                 >
                                     Open Tool
-                                </a>
+                                </button>
 
-                                {/* DOCS */}
+                                {/* Documentation */}
                                 <a
                                     href="https://genfabtools.com/docs/rsi/index.html"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="border px-4 py-2 rounded"
+                                    className="border border-gray-300 bg-white text-black px-5 py-2 rounded-md font-semibold hover:bg-gray-100"
                                 >
                                     Documentation
                                 </a>
 
-                                {/* EMAIL */}
+                                {/* Email */}
                                 <a
-                                    href="mailto:support@genfabtools.com"
-                                    className="border px-4 py-2 rounded"
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=support@genfabtools.com&su=RSI Early Access"
+                                    target="_blank"
+                                    className="border border-gray-300 bg-white text-black px-5 py-2 rounded-md font-semibold hover:bg-gray-100"
                                 >
                                     Get Early Access
                                 </a>
