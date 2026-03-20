@@ -24,6 +24,7 @@ const SAMPLE_TOOLS = [
         tags: ['Featured', 'Revit Plugin'],
         link: '/tools/rsi',
         icon: '/images/rsi/efficiency-dashboard.png',
+        price: 49,
     },
 ];
 
@@ -61,8 +62,10 @@ function Tools() {
                 const has = (t.tags || []).some(tag => activeTags.includes(tag));
                 if (!has) return false;
             }
-            if (priceFilter === 'free' && t.price && t.price.toLowerCase() !== 'free') return false;
-            if (priceFilter === 'paid' && (!t.price || t.price.toLowerCase() === 'free')) return false;
+            const isFree = t.price === 0 || t.price === 'Free' || t.price === 'free';
+            const isPaid = typeof t.price === 'number' ? t.price > 0 : (!!t.price && !isFree);
+            if (priceFilter === 'free' && !isFree) return false;
+            if (priceFilter === 'paid' && !isPaid) return false;
             return true;
         });
     }, [query, activeTags, priceFilter]);
@@ -148,7 +151,7 @@ function Tools() {
                                         </p>
                                         <div className="mt-5 flex flex-wrap gap-3">
                                             <Link to="/tools/rsi" className="inline-flex items-center rounded-md bg-slate-900 text-white px-5 py-2.5 text-sm font-semibold hover:opacity-95">Open Tool</Link>
-                                            <a href="/docs/rsi" className="inline-flex items-center rounded-md border border-slate-200 px-5 py-2.5 text-sm text-slate-800 font-semibold hover:bg-slate-50">Documentation</a>
+                                            <Link to="/docs/rsi" className="inline-flex items-center rounded-md border border-slate-200 px-5 py-2.5 text-sm text-slate-800 font-semibold hover:bg-slate-50">Documentation</Link>
                                         </div>
                                     </div>
                                     <div className="flex-shrink-0 w-full md:w-64">
@@ -162,7 +165,7 @@ function Tools() {
                                     <div className="col-span-full text-center text-slate-600 py-12">No tools match your search or filters.</div>
                                 ) : (
                                     filtered.map((t) => (
-                                        <ToolCard key={t.id} tool={t} onOpen={openTool} />
+                                        <ToolCard key={t.id} tool={t} />
                                     ))
                                 )}
                             </div>
