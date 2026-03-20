@@ -26,8 +26,8 @@ export default function RSI() {
                         <button
                             onClick={() => setBilling('monthly')}
                             className={`px-4 py-2 rounded-md text-sm ${billing === 'monthly'
-                                    ? 'bg-black text-white'
-                                    : 'bg-white border'
+                                ? 'bg-black text-white'
+                                : 'bg-white border'
                                 }`}
                         >
                             Monthly
@@ -36,8 +36,8 @@ export default function RSI() {
                         <button
                             onClick={() => setBilling('yearly')}
                             className={`px-4 py-2 rounded-md text-sm ${billing === 'yearly'
-                                    ? 'bg-black text-white'
-                                    : 'bg-white border'
+                                ? 'bg-black text-white'
+                                : 'bg-white border'
                                 }`}
                         >
                             Yearly
@@ -66,7 +66,7 @@ export default function RSI() {
                             href="https://genfabtools.com/docs/rsi/index.html"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="border px-6 py-3 rounded-md font-semibold hover:bg-gray-100"
+                            className="border text-black px-6 py-3 rounded-md font-semibold hover:bg-gray-100"
                         >
                             Documentation
                         </a>
