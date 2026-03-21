@@ -165,7 +165,7 @@ function Tools() {
 
                             {/* IMAGE (VERY IMPORTANT) */}
                             <img
-                                src="/images/rsi/efficiency-dashboard.png"
+                                src="/images/rsi/efficiency-dashboard-heatmap.png"
                                 alt="RSI dashboard"
                                 className="w-full md:w-64 rounded-lg shadow"
                             />
