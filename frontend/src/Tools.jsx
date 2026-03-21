@@ -94,7 +94,7 @@ function Tools() {
                                         onClick={() => setPriceFilter(type)}
                                         className={`px-3 py-1 rounded-md text-sm ${priceFilter === type
                                             ? 'bg-black text-white'
-                                            : 'bg-white border'
+                                            : 'bg-white border text-black'
                                             }`}
                                     >
                                         {type}
