@@ -1,55 +1,102 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 export default function About() {
-    useEffect(() => {
-        document.title = 'About — GenFabTools';
-    }, []);
-
     return (
-        <main className="max-w-5xl mx-auto px-4 py-12">
-            <header className="mb-8">
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900">About GenFabTools</h1>
-                <p className="mt-2 text-slate-600">Practical tools for architects and engineers — simple, auditable occupancy calculations that fit your workflow.</p>
-            </header>
+        <div className="max-w-6xl mx-auto px-6 py-16">
 
-            <section className="grid gap-8 md:grid-cols-2 items-start">
+            {/* HEADER */}
+            <div className="max-w-3xl">
+                <h1 className="text-4xl font-extrabold text-slate-900">
+                    About GenFabTools
+                </h1>
+
+                <p className="mt-4 text-lg text-slate-600 leading-relaxed">
+                    GenFabTools builds specialized digital tools for architects and developers,
+                    focused on improving decision-making during early design stages.
+                    Our current flagship product, Residential Scheme Intelligence (RSI),
+                    helps evaluate residential layouts through performance and financial insights directly inside Revit.
+                </p>
+            </div>
+
+            {/* MISSION */}
+            <div className="mt-12 grid md:grid-cols-2 gap-10">
+
                 <div>
-                    <h2 className="text-xl font-semibold mb-2">Our mission</h2>
-                    <p className="text-slate-700 leading-relaxed">Help design teams make confident, code-compliant decisions faster by providing clear, auditable calculations, sensible defaults, and exportable results.</p>
+                    <h2 className="text-xl font-bold text-slate-900">Our mission</h2>
+
+                    <p className="mt-3 text-slate-600 leading-relaxed">
+                        To bridge the gap between architectural design and financial feasibility
+                        by providing tools that make complex analysis simple, fast, and reliable.
+                    </p>
                 </div>
 
                 <div>
-                    <h2 className="text-xl font-semibold mb-2">What we build</h2>
-                    <ul className="list-disc pl-5 text-slate-700 space-y-2">
-                        <li>Fast occupancy and space planning calculations</li>
-                        <li>Export to PDF and CSV for reporting and handoff</li>
-                        <li>Lightweight integrations for common design workflows</li>
+                    <h2 className="text-xl font-bold text-slate-900">What we are building</h2>
+
+                    <ul className="mt-3 space-y-2 text-slate-600">
+                        <li>• Performance analysis for residential schemes</li>
+                        <li>• Financial feasibility evaluation tools</li>
+                        <li>• Design decision support systems inside Revit</li>
                     </ul>
                 </div>
-            </section>
 
-            <section className="mt-12">
-                <h3 className="text-2xl font-semibold mb-4">Values</h3>
-                <div className="grid gap-4 sm:grid-cols-3">
-                    <div className="p-4 bg-white/50 dark:bg-slate-800 rounded-lg shadow-sm text-slate-900 dark:text-white">
-                        <h4 className="font-semibold">Accuracy</h4>
-                        <p className="text-slate-600">Clear, auditable calculations with transparent assumptions.</p>
+            </div>
+
+            {/* VALUES */}
+            <div className="mt-16">
+                <h2 className="text-xl font-bold text-slate-900">Values</h2>
+
+                <div className="mt-6 grid md:grid-cols-3 gap-6">
+
+                    <div className="p-6 border rounded-xl">
+                        <h3 className="font-semibold text-slate-900">Clarity</h3>
+                        <p className="mt-2 text-sm text-slate-600">
+                            We simplify complex calculations into clear, actionable insights.
+                        </p>
                     </div>
-                    <div className="p-4 bg-white/50 dark:bg-slate-800 rounded-lg shadow-sm text-slate-900 dark:text-white">
-                        <h4 className="font-semibold">Simplicity</h4>
-                        <p className="text-slate-600">Tools that are fast to learn and simple to apply.</p>
+
+                    <div className="p-6 border rounded-xl">
+                        <h3 className="font-semibold text-slate-900">Efficiency</h3>
+                        <p className="mt-2 text-sm text-slate-600">
+                            Our tools are designed to save time and accelerate decision-making.
+                        </p>
                     </div>
-                    <div className="p-4 bg-white/50 dark:bg-slate-800 rounded-lg shadow-sm text-slate-900 dark:text-white">
-                        <h4 className="font-semibold">Transparency</h4>
-                        <p className="text-slate-600">Exportable outputs and documented assumptions for audits.</p>
+
+                    <div className="p-6 border rounded-xl">
+                        <h3 className="font-semibold text-slate-900">Reliability</h3>
+                        <p className="mt-2 text-sm text-slate-600">
+                            Every output is structured to be consistent and dependable for real projects.
+                        </p>
                     </div>
+
                 </div>
-            </section>
+            </div>
 
-            <section className="mt-12">
-                <h3 className="text-2xl font-semibold mb-4">Team</h3>
-                <p className="text-slate-700">A small cross-functional team focused on building dependable tools. For partnerships or support, please visit our Contact page.</p>
-            </section>
-        </main>
+            {/* PRODUCT SECTION */}
+            <div className="mt-16">
+
+                <h2 className="text-xl font-bold text-slate-900">
+                    Residential Scheme Intelligence (RSI)
+                </h2>
+
+                <p className="mt-3 text-slate-600 max-w-3xl leading-relaxed">
+                    RSI is our first released tool, developed to support architects and developers
+                    in analyzing residential schemes. It provides instant insights into efficiency,
+                    unit mix, and financial performance — enabling faster and more informed decisions.
+                </p>
+
+            </div>
+
+            {/* TEAM */}
+            <div className="mt-16">
+                <h2 className="text-xl font-bold text-slate-900">Team</h2>
+
+                <p className="mt-3 text-slate-600">
+                    GenFabTools is currently developed as an independent initiative focused on
+                    building practical tools for real-world design challenges.
+                </p>
+            </div>
+
+        </div>
     );
 }
