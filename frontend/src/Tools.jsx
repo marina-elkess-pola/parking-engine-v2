@@ -38,8 +38,17 @@ function Tools() {
 
             if (query && !text.includes(query.toLowerCase())) return false;
 
-            if (priceFilter === 'free' && t.price !== 0) return false;
-            if (priceFilter === 'paid' && (!t.price || t.price === 0)) return false;
+            const isFree =
+                t.price === 0 ||
+                t.priceMonthly === 0;
+
+            const isPaid =
+                (typeof t.price === 'number' && t.price > 0) ||
+                (typeof t.priceMonthly === 'number' && t.priceMonthly > 0) ||
+                (typeof t.priceYearly === 'number' && t.priceYearly > 0);
+
+            if (priceFilter === 'free' && !isFree) return false;
+            if (priceFilter === 'paid' && !isPaid) return false;
 
             return true;
         });

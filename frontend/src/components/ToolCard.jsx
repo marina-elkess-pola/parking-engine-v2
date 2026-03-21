@@ -32,7 +32,8 @@ export default function ToolCard({ tool }) {
         />
 
         {/* TITLE */}
-        <h3 className="mt-4 text-lg font-extrabold text-slate-900"> {tool.title}
+        <h3 className="mt-4 text-lg font-extrabold text-slate-900">
+          {tool.title}
         </h3>
 
         {/* DESCRIPTION */}
