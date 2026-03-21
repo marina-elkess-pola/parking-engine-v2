@@ -32,7 +32,7 @@ export default function RSI() {
                             onClick={() => setBilling('monthly')}
                             className={`px-4 py-2 rounded-md text-sm font-semibold ${billing === 'monthly'
                                 ? 'bg-black text-white'
-                                : 'bg-white border'
+                                : 'bg-white border text-black'
                                 }`}
                         >
                             Monthly

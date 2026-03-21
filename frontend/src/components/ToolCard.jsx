@@ -28,7 +28,7 @@ export default function ToolCard({ tool }) {
         <img
           src={tool.image || tool.icon}
           alt={tool.title}
-          className="w-full h-40 object-cover rounded-lg shadow-sm"
+          className="w-10 h-10 object-cover rounded-lg shadow-sm"
         />
 
         {/* TITLE */}
@@ -84,18 +84,13 @@ export default function ToolCard({ tool }) {
 
               {/* OPEN TOOL */}
               <button
-                onClick={() => navigate(`/tools/${tool.id}`)}
-                className="flex-1 rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-semibold hover:bg-slate-800"
+                onClick={() => {
+                  navigate(`/tools/${tool.id}`);
+                  window.scrollTo(0, 0);
+                }}
+                className="w-full rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-semibold hover:bg-slate-800"
               >
                 Open Tool
-              </button>
-
-              {/* DETAILS */}
-              <button
-                onClick={() => navigate(`/tools/${tool.id}`)}
-                className="flex-1 rounded-md border border-slate-200 px-4 py-2 text-sm hover:bg-slate-50"
-              >
-                Details
               </button>
 
             </div>
@@ -110,7 +105,7 @@ export default function ToolCard({ tool }) {
                   '_blank'
                 )
               }
-              className="w-full rounded-md bg-slate-900 text-white px-4 py-2 text-sm font-semibold hover:bg-slate-800"
+              className="w-full rounded-md bg-slate-900 text-black px-4 py-2 text-sm font-semibold hover:bg-slate-800"
             >
               Get Early Access
             </button>
