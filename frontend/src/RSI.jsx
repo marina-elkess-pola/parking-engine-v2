@@ -31,8 +31,8 @@ export default function RSI() {
                         <button
                             onClick={() => setBilling('monthly')}
                             className={`px-4 py-2 rounded-md text-sm font-semibold ${billing === 'monthly'
-                                    ? 'bg-black text-white'
-                                    : 'bg-white border'
+                                ? 'bg-black text-white'
+                                : 'bg-white border'
                                 }`}
                         >
                             Monthly
@@ -41,8 +41,8 @@ export default function RSI() {
                         <button
                             onClick={() => setBilling('yearly')}
                             className={`px-4 py-2 rounded-md text-sm font-semibold relative ${billing === 'yearly'
-                                    ? 'bg-black text-white'
-                                    : 'bg-white border'
+                                ? 'bg-black text-white'
+                                : 'bg-white border text-black'
                                 }`}
                         >
                             Yearly
