@@ -8,10 +8,9 @@ export default function ToolCard({ tool }) {
   const [billing, setBilling] = useState('month');
 
   // Pricing logic
-  const price =
-    billing === 'month'
-      ? tool.priceMonthly
-      : tool.priceYearly;
+  const price = billing === 'monthly'
+    ? tool.pricing.monthly
+    : tool.pricing.yearly;
 
   return (
     <div className="bg-white rounded-2xl shadow-sm w-full flex flex-col h-full min-h-[460px] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 overflow-hidden">

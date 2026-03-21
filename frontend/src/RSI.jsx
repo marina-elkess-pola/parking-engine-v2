@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
+import { toolsData } from '../data/toolsData';
+
+const rsi = toolsData.find(t => t.id === 'rsi');
 
 export default function RSI() {
     const [billing, setBilling] = useState('monthly');
 
-    const monthlyPrice = 49;
-    const yearlyPrice = 390;
-    const savings = monthlyPrice * 12 - yearlyPrice;
+    const price =
+        billing === 'monthly'
+            ? rsi.pricing.monthly
+            : rsi.pricing.yearly;
+    const savings = rsi.pricing.monthly * 12 - rsi.pricing.yearly;
 
-    const price = billing === 'monthly' ? monthlyPrice : yearlyPrice;
+    const price = billing === 'monthly' ? rsi.pricing.monthly : rsi.pricing.yearly;
 
     return (
         <div className="max-w-6xl mx-auto px-6 py-16">
@@ -73,15 +78,12 @@ export default function RSI() {
                     {/* BUTTONS */}
                     <div className="mt-6 flex gap-4 flex-wrap">
 
-                        <a
-                            href="https://genfabtools.com/download/RSI_Setup.exe"
-                            className="bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800"
-                        >
+                        <a href={rsi.links.download} className="bg-black text-white px-6 py-3 rounded-md font-semibold hover:bg-gray-800">
                             Download Tool
                         </a>
 
                         <a
-                            href="https://genfabtools.com/docs/rsi/index.html"
+                            href={rsi.links.documentation}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="border text-black px-6 py-3 rounded-md font-semibold hover:bg-gray-100"
@@ -103,6 +105,14 @@ export default function RSI() {
             </div>
 
             {/* FEATURES */}
+
+            <ul>
+                {rsi.features.map((f, i) => (
+                    <li key={i}>• {f}</li>
+                ))}
+            </ul>
+
+
             <div className="mt-20 grid md:grid-cols-3 gap-8">
 
                 <div className="p-6 border rounded-xl">
