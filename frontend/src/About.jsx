@@ -11,10 +11,9 @@ export default function About() {
                 </h1>
 
                 <p className="mt-4 text-lg text-slate-600 leading-relaxed">
-                    GenFabTools builds specialized digital tools for architects and developers,
-                    focused on improving decision-making during early design stages.
-                    Our current flagship product, Residential Scheme Intelligence (RSI),
-                    helps evaluate residential layouts through performance and financial insights directly inside Revit.
+                    GenFabTools is a platform dedicated to building intelligent tools for architects,
+                    engineers, and designers. Our focus is on simplifying complex workflows,
+                    improving decision-making, and bridging the gap between design and performance.
                 </p>
             </div>
 
@@ -25,21 +24,55 @@ export default function About() {
                     <h2 className="text-xl font-bold text-slate-900">Our mission</h2>
 
                     <p className="mt-3 text-slate-600 leading-relaxed">
-                        To bridge the gap between architectural design and financial feasibility
-                        by providing tools that make complex analysis simple, fast, and reliable.
+                        To develop a growing ecosystem of tools that enhance how projects are designed,
+                        analyzed, and delivered — making advanced workflows accessible, efficient,
+                        and reliable.
                     </p>
                 </div>
 
                 <div>
-                    <h2 className="text-xl font-bold text-slate-900">What we are building</h2>
+                    <h2 className="text-xl font-bold text-slate-900">What we build</h2>
 
                     <ul className="mt-3 space-y-2 text-slate-600">
-                        <li>• Performance analysis for residential schemes</li>
-                        <li>• Financial feasibility evaluation tools</li>
-                        <li>• Design decision support systems inside Revit</li>
+                        <li>• Revit plugins for design intelligence and feasibility analysis</li>
+                        <li>• Grasshopper tools for computational design workflows</li>
+                        <li>• Digital utilities that connect design decisions with performance outcomes</li>
                     </ul>
                 </div>
 
+            </div>
+
+            {/* PRODUCTS */}
+            <div className="mt-16">
+                <h2 className="text-xl font-bold text-slate-900">Current tools</h2>
+
+                <div className="mt-6 grid md:grid-cols-2 gap-6">
+
+                    {/* RSI */}
+                    <div className="p-6 border rounded-xl">
+                        <h3 className="font-semibold text-slate-900">
+                            Residential Scheme Intelligence (RSI)
+                        </h3>
+                        <p className="mt-2 text-sm text-slate-600">
+                            A professional Revit plugin that analyzes residential layouts,
+                            detects inefficiencies, and evaluates financial performance to support
+                            better design decisions.
+                        </p>
+                    </div>
+
+                    {/* Elytra */}
+                    <div className="p-6 border rounded-xl">
+                        <h3 className="font-semibold text-slate-900">
+                            Elytra (Grasshopper Plugin)
+                        </h3>
+                        <p className="mt-2 text-sm text-slate-600">
+                            A computational design plugin for Grasshopper, focused on enhancing
+                            parametric workflows. Elytra has been published on Food4Rhino and GitHub,
+                            and is used within the computational design community.
+                        </p>
+                    </div>
+
+                </div>
             </div>
 
             {/* VALUES */}
@@ -51,40 +84,25 @@ export default function About() {
                     <div className="p-6 border rounded-xl">
                         <h3 className="font-semibold text-slate-900">Clarity</h3>
                         <p className="mt-2 text-sm text-slate-600">
-                            We simplify complex calculations into clear, actionable insights.
+                            We turn complex processes into clear, actionable insights.
                         </p>
                     </div>
 
                     <div className="p-6 border rounded-xl">
-                        <h3 className="font-semibold text-slate-900">Efficiency</h3>
+                        <h3 className="font-semibold text-slate-900">Practicality</h3>
                         <p className="mt-2 text-sm text-slate-600">
-                            Our tools are designed to save time and accelerate decision-making.
+                            Every tool is built for real-world use, not theoretical workflows.
                         </p>
                     </div>
 
                     <div className="p-6 border rounded-xl">
-                        <h3 className="font-semibold text-slate-900">Reliability</h3>
+                        <h3 className="font-semibold text-slate-900">Innovation</h3>
                         <p className="mt-2 text-sm text-slate-600">
-                            Every output is structured to be consistent and dependable for real projects.
+                            We continuously explore new ways to improve design and analysis processes.
                         </p>
                     </div>
 
                 </div>
-            </div>
-
-            {/* PRODUCT SECTION */}
-            <div className="mt-16">
-
-                <h2 className="text-xl font-bold text-slate-900">
-                    Residential Scheme Intelligence (RSI)
-                </h2>
-
-                <p className="mt-3 text-slate-600 max-w-3xl leading-relaxed">
-                    RSI is our first released tool, developed to support architects and developers
-                    in analyzing residential schemes. It provides instant insights into efficiency,
-                    unit mix, and financial performance — enabling faster and more informed decisions.
-                </p>
-
             </div>
 
             {/* TEAM */}
@@ -92,8 +110,8 @@ export default function About() {
                 <h2 className="text-xl font-bold text-slate-900">Team</h2>
 
                 <p className="mt-3 text-slate-600">
-                    GenFabTools is currently developed as an independent initiative focused on
-                    building practical tools for real-world design challenges.
+                    GenFabTools is an independent initiative focused on developing tools that
+                    address real challenges in architecture and design workflows.
                 </p>
             </div>
 
