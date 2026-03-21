@@ -1,24 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import toolsLogo from './assets/tools-logo-black.png';
 import ToolCard from './components/ToolCard';
+import { toolsData } from './data/toolsData';
 
-const SAMPLE_TOOLS = [
-    {
-        id: 'rsi',
-        title: 'Residential Scheme Intelligence',
-        description:
-            'A professional Revit plugin that analyzes residential schemes, detects inefficiencies, optimizes layouts, and evaluates financial performance in seconds.',
-        category: 'Revit Plugin',
-        tags: ['Featured', 'Revit Plugin'],
-        link: 'https://genfabtools.com/download/RSI_Setup.exe',
-        docs: 'https://genfabtools.com/docs/rsi/index.html',
-        icon: '/images/rsi/RSI1080.png',
-
-        // ✅ PRICING (FIXED)
-        priceMonthly: 49,
-        priceYearly: 390,
-    },
-];
 
 function Tools() {
     const [query, setQuery] = useState('');
@@ -33,7 +17,7 @@ function Tools() {
     }
 
     const filtered = useMemo(() => {
-        return SAMPLE_TOOLS.filter((t) => {
+        return toolsData.filter((t) => {
             const text = (t.title + ' ' + t.description).toLowerCase();
 
             if (query && !text.includes(query.toLowerCase())) return false;
