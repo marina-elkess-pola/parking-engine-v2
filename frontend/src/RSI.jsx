@@ -181,21 +181,44 @@ export default function RSI() {
                         <p className="mt-3 text-slate-500">Real output from RSI running inside Revit.</p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200">
-                            <img src="/images/rsi/efficiency-dashboard.png" alt="Efficiency dashboard" className="w-full" />
-                            <div className="p-4 bg-white">
-                                <p className="text-sm font-semibold text-slate-800">Efficiency Dashboard</p>
-                                <p className="text-xs text-slate-500 mt-1">83% net-to-gross efficiency with space composition breakdown.</p>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {[
+                            {
+                                src: '/images/rsi/efficiency-dashboard.png',
+                                alt: 'Efficiency dashboard',
+                                label: 'Efficiency Dashboard',
+                                desc: '83% net-to-gross efficiency with live space composition breakdown.',
+                            },
+                            {
+                                src: '/images/rsi/financial-impact-RSI.png',
+                                alt: 'Financial impact analysis',
+                                label: 'Financial Impact',
+                                desc: 'Revenue estimation and sell-price sensitivity per scheme.',
+                            },
+                            {
+                                src: '/images/rsi/decision-summary.png',
+                                alt: 'Decision summary',
+                                label: 'Decision Summary',
+                                desc: 'Side-by-side scheme comparison with revenue delta.',
+                            },
+                        ].map((card, i) => (
+                            <div
+                                key={i}
+                                className="group rounded-2xl border border-slate-200 bg-white overflow-hidden hover:shadow-lg transition"
+                            >
+                                <div className="aspect-[4/3] overflow-hidden bg-slate-100 flex items-center justify-center p-4">
+                                    <img
+                                        src={card.src}
+                                        alt={card.alt}
+                                        className="max-h-full max-w-full object-contain group-hover:scale-[1.03] transition duration-300"
+                                    />
+                                </div>
+                                <div className="p-5">
+                                    <p className="font-semibold text-slate-900">{card.label}</p>
+                                    <p className="mt-1 text-sm text-slate-500 leading-relaxed">{card.desc}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200">
-                            <img src="/images/rsi/decision-summary.png" alt="Decision summary comparison" className="w-full" />
-                            <div className="p-4 bg-white">
-                                <p className="text-sm font-semibold text-slate-800">Decision Summary</p>
-                                <p className="text-xs text-slate-500 mt-1">Compare schemes and see revenue impact instantly.</p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
