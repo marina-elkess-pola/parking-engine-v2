@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OccuCalcRevitHelper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e4a1a0073b9e33ff26e7e5c38fe479860c19fc0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9a250d73596c86852089b0947d87f9fc1ad93d2d")]
 [assembly: System.Reflection.AssemblyProductAttribute("OccuCalcRevitHelper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OccuCalcRevitHelper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
