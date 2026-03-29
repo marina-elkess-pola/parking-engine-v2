@@ -8,17 +8,17 @@
     "description": "GenFabTools – AI-powered tools for design, planning, and construction professionals.",
     "icons": [
         {
-            "src": "/genfabtools-logo.svg",
+            "src": "/GenFabTools32.svg",
             "type": "image/svg+xml",
             "sizes": "any"
         },
         {
-            "src": "/icon-192.png",
+            "src": "/genfabtools-logo.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/icon-512.png",
+            "src": "/genfabtools-logo.png",
             "type": "image/png",
             "sizes": "512x512"
         }
