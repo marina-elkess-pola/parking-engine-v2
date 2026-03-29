@@ -1,0 +1,10 @@
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Release\net48\BSI.csproj.AssemblyReference.cache
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Release\net48\BSI.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Release\net48\BSI.AssemblyInfoInputs.cache
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Release\net48\BSI.AssemblyInfo.cs
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Release\net48\BSI.csproj.CoreCompileInputs.cache
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Release\net48\BSI.sourcelink.json
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\bin\Release\net48\BSI.RevitAddin.dll
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\bin\Release\net48\BSI.RevitAddin.pdb
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Release\net48\BSI.RevitAddin.dll
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Release\net48\BSI.RevitAddin.pdb

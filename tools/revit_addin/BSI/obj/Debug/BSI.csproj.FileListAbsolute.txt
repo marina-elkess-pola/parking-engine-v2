@@ -1,0 +1,11 @@
+C:\Users\Personal\AppData\Roaming\Autodesk\Revit\Addins\2024\BSI.addin
+C:\Users\Personal\AppData\Roaming\Autodesk\Revit\Addins\2024\BSI.RevitAddin.dll
+C:\Users\Personal\AppData\Roaming\Autodesk\Revit\Addins\2024\BSI.RevitAddin.pdb
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Debug\BSI.csproj.AssemblyReference.cache
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Debug\BSI.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Debug\BSI.AssemblyInfoInputs.cache
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Debug\BSI.AssemblyInfo.cs
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Debug\BSI.csproj.CoreCompileInputs.cache
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Debug\BSI.sourcelink.json
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Debug\BSI.RevitAddin.dll
+c:\Users\Personal\OneDrive\Desktop\Marina\Companies\GenFabTools\platform\tools\revit_addin\BSI\obj\Debug\BSI.RevitAddin.pdb

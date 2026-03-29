@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>BSI - Building Scheme Intelligence</Name>
+    <Assembly>BSI.RevitAddin.dll</Assembly>
+    <AddInId>F7A1B2C3-D4E5-6F78-9A0B-CDEF12345678</AddInId>
+    <FullClassName>BSI.RevitAddin.BsiApp</FullClassName>
+    <VendorId>GenFabTools</VendorId>
+    <VendorDescription>GenFabTools - Building Scheme Intelligence</VendorDescription>
+  </AddIn>
+
+  <AddIn Type="Command">
+    <Name>BSI Toggle Panel</Name>
+    <Assembly>BSI.RevitAddin.dll</Assembly>
+    <AddInId>A2B3C4D5-E6F7-8901-2345-6789ABCDEF01</AddInId>
+    <FullClassName>BSI.RevitAddin.TogglePanelCommand</FullClassName>
+    <VendorId>GenFabTools</VendorId>
+    <Text>BSI Panel</Text>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+
+  <AddIn Type="Command">
+    <Name>BSI Analyze Model</Name>
+    <Assembly>BSI.RevitAddin.dll</Assembly>
+    <AddInId>B3C4D5E6-F789-0123-4567-89ABCDEF0123</AddInId>
+    <FullClassName>BSI.RevitAddin.AnalyzeCommand</FullClassName>
+    <VendorId>GenFabTools</VendorId>
+    <Text>Analyze Model</Text>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+</RevitAddIns>

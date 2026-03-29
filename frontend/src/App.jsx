@@ -7,6 +7,26 @@ const OccuCalc = lazy(() => import('./OccuCalc'));
 const ParkCore = lazy(() => import('./ParkCore'));
 const SiteGen = lazy(() => import('./SiteGen'));
 const Register = lazy(() => import('./Register'));
+const HomeV1 = lazy(() => import('./HomeV1'));
+const HomeV2 = lazy(() => import('./HomeV2'));
+const HomeV3 = lazy(() => import('./HomeV3'));
+const HomeV4 = lazy(() => import('./HomeV4'));
+const HomeV5 = lazy(() => import('./HomeV5'));
+const HomeV6 = lazy(() => import('./HomeV6'));
+const HomeV7 = lazy(() => import('./HomeV7'));
+const HomeV8 = lazy(() => import('./HomeV8'));
+const HomeV9 = lazy(() => import('./HomeV9'));
+const HomeV10 = lazy(() => import('./HomeV10'));
+const HomeV11 = lazy(() => import('./HomeV11'));
+const HomeV12 = lazy(() => import('./HomeV12'));
+const HomeV13 = lazy(() => import('./HomeV13'));
+const HomeV14 = lazy(() => import('./HomeV14'));
+const HomeV15 = lazy(() => import('./HomeV15'));
+const HomeV16 = lazy(() => import('./HomeV16'));
+const HomeV17 = lazy(() => import('./HomeV17'));
+const HomeV18A = lazy(() => import('./HomeV18A'));
+const HomeV18B = lazy(() => import('./HomeV18B'));
+const HomeV19 = lazy(() => import('./HomeV19'));
 const Login = lazy(() => import('./Login'));
 const PurchaseVerify = lazy(() => import('./PurchaseVerify'));
 // Scaffolded informational pages
@@ -16,6 +36,7 @@ const FAQ = lazy(() => import('./FAQ'));
 const Account = lazy(() => import('./Account'));
 const Support = lazy(() => import('./Support'));
 const RSI = lazy(() => import('./RSI'));
+const BSI = lazy(() => import('./BSI'));
 import Layout from './components/Layout';
 import ErrorBoundary from './components/ErrorBoundary';
 import { SHOW_DRAFT_TOOLS } from './config/featureFlags';
@@ -218,6 +239,28 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeMain />} />
 
+          {/* Homepage version previews — visit /v1, /v2, /v3 to compare */}
+          <Route path="/v1" element={<Layout showHero={false}><Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV1 /></Suspense></Layout>} />
+          <Route path="/v2" element={<Layout showHero={false}><Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV2 /></Suspense></Layout>} />
+          <Route path="/v3" element={<Layout showHero={false}><Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV3 /></Suspense></Layout>} />
+          <Route path="/v4" element={<Layout showHero={false}><Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV4 /></Suspense></Layout>} />
+          <Route path="/v5" element={<Layout showHero={false}><Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV5 /></Suspense></Layout>} />
+          <Route path="/v6" element={<Layout showHero={false}><Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV6 /></Suspense></Layout>} />
+          <Route path="/v7" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV7 /></Suspense>} />
+          <Route path="/v8" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV8 /></Suspense>} />
+          <Route path="/v9" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV9 /></Suspense>} />
+          <Route path="/v10" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV10 /></Suspense>} />
+          <Route path="/v11" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV11 /></Suspense>} />
+          <Route path="/v12" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV12 /></Suspense>} />
+          <Route path="/v13" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV13 /></Suspense>} />
+          <Route path="/v14" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV14 /></Suspense>} />
+          <Route path="/v15" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV15 /></Suspense>} />
+          <Route path="/v16" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV16 /></Suspense>} />
+          <Route path="/v17" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV17 /></Suspense>} />
+          <Route path="/v18a" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV18A /></Suspense>} />
+          <Route path="/v18b" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV18B /></Suspense>} />
+          <Route path="/v19" element={<Suspense fallback={<div className="p-8 text-center">Loading…</div>}><HomeV19 /></Suspense>} />
+
           <Route
             path="/immersive"
             element={<Layout showHero={false}><Suspense fallback={<div className="p-8 text-center">Loading…</div>}><ImmersiveHomepage /></Suspense></Layout>}
@@ -235,6 +278,17 @@ function App() {
               <Layout showHero={false}>
                 <Suspense fallback={<div className="p-8 text-center">Loading…</div>}>
                   <RSI />
+                </Suspense>
+              </Layout>
+            }
+          />
+
+          <Route
+            path="/tools/bsi"
+            element={
+              <Layout showHero={false}>
+                <Suspense fallback={<div className="p-8 text-center">Loading BSI…</div>}>
+                  <BSI />
                 </Suspense>
               </Layout>
             }
